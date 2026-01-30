@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Jets Edition</title>
+    <style>
+        /* CSS STYLES */
+        :root {
+            --blue: #00013f;
+            --black: #1212117b;
+            --white: #ffffff;
+            --accent-green: #35046a;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: var(--black);
+            color: var(--white);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--jets-green);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            border-bottom: 2px solid var(--accent-green);
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover {
+            color: var(--accent-green);
+        }
+
+        /* Sections */
+        section {
+            padding: 100px 20px;
+            min-height: 80vh;
+            max-width: 900px;
+            margin: 0 auto;
+            border-bottom: 1px solid #222;
+        }
+
+        h1, h2 {
+            color: var(--accent-green);
+            text-transform: uppercase;
+        }
+
+        .card {
+            background: #111;
+            padding: 20px;
+            border-left: 5px solid var(--accent-green);
+            margin: 20px 0;
+        }
+
+        /* Video Container */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            background: #000;
+            margin-top: 20px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.8rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h1>About Me</h1>
+        <p>I am a high school student passionate about learning technology and design. This website is my first step into web development.</p>
+            <p>When I am not studying, I enjoy doing math, talking to my friends, and learning how to code.</p>
+    </section>
+
+    <section id="projects">
+        <h1>My Projects</h1>
+        <div class="card">
+            <h3>Project One: Video Showcase</h3>
+            <p>Below are two examples of some of my projects in my CSE class throughout the year.</p>
+            
+            <div class="video-container">
+                <iframe 
+                    src="https://black-screen-video-p-52n0.bolt.host/" 
+                    allow="autoplay">
+                </iframe>
+            </div>
+        </div>
+        <div class="video-container">
+                <iframe 
+                    src="https://black-screen-video-p-vuwg.bolt.host/" 
+                    allow="autoplay">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume">
+        <h1>Resume</h1>
+        <div class="card">
+            <h3>Education</h3>
+            <p><strong>High School Diploma</strong> | Expected 2028</p>
+            <ul>
+                <li>GPA: 4.0</li>
+                <li>Relevant Coursework: Computer Science, Statistics, Calculus, Digital Art</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Skills</h3>
+            <p>HTML5, Python, Training Machine Learning Models,  Leadership</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <p>Interested in collaborating? Feel free to reach out!</p>
+        <div class="card">
+            <p>Email: kasarabada7868@mydusd.org</p>
+            <p>Phone Number: 408-XXX-XXXX</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 Jet-Themed Portfolio. All rights reserved.
+    </footer>
+
+</body>
+</html>
